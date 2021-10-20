@@ -1,0 +1,109 @@
+﻿@model BugTrackingSystem.Models.Ticket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Ticket Details</h2>
+
+<head>
+    <style>
+
+        body {
+            background-image: url('../../Skybluish.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<div>
+    @*<h4>Ticket</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticket_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ticket_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticket_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ticket_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assigned_Developer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assigned_Developer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Submitter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Submitter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Project)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Project)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticket_Priority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ticket_Priority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticket_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ticket_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticket_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ticket_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Created)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Created)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

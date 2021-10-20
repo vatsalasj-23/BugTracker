@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BugsModel1StoreContainer" CdmEntityContainer="BugsEntities9">
+    <EntitySetMapping Name="Tickets">
+      <EntityTypeMapping TypeName="BugsModel1.Ticket">
+        <MappingFragment StoreEntitySet="Tickets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TicketId" ColumnName="TicketId" />
+          <ScalarProperty Name="Ticket_Title" ColumnName="Ticket Title" />
+          <ScalarProperty Name="Ticket_Description" ColumnName="Ticket Description" />
+          <ScalarProperty Name="Assigned_Developer" ColumnName="Assigned Developer" />
+          <ScalarProperty Name="Submitter" ColumnName="Submitter" />
+          <ScalarProperty Name="Project" ColumnName="Project" />
+          <ScalarProperty Name="Ticket_Priority" ColumnName="Ticket Priority" />
+          <ScalarProperty Name="Ticket_Status" ColumnName="Ticket Status" />
+          <ScalarProperty Name="Ticket_Type" ColumnName="Ticket Type" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

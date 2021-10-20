@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BugsModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tickets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ticket Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ticket Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Assigned Developer" Type="nvarchar" MaxLength="300" />
+    <Property Name="Submitter" Type="nvarchar" MaxLength="200" />
+    <Property Name="Project" Type="nvarchar" MaxLength="60" />
+    <Property Name="Ticket Priority" Type="nvarchar" MaxLength="60" />
+    <Property Name="Ticket Status" Type="nvarchar" MaxLength="60" />
+    <Property Name="Ticket Type" Type="nvarchar" MaxLength="60" />
+    <Property Name="Created" Type="date" />
+  </EntityType>
+  <EntityContainer Name="BugsModel1StoreContainer">
+    <EntitySet Name="Tickets" EntityType="Self.Tickets" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
